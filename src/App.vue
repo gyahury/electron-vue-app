@@ -1,26 +1,35 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import SideBar from './components/SideBar.vue'
+import TitleBar from './components/TitleBar.vue'
 </script>
 
+
+<template>
+  <v-app>
+    <v-main>
+      <TitleBar />
+      <SideBar />
+    </v-main>
+  </v-app>
+</template>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+::-webkit-scrollbar {
+  display: none;
+}
+
+.v-application {
+  font-family: 'NotoSans' !important;
+}
+
+@font-face {
+  font-family:'NotoSans';
+  src: url('assets/fonts/NotoSansKR-Bold.otf') format('truetype');
+}
+/* 영문, 특수문자 폰트 */
+@font-face {
+  font-family:'NotoSans';
+  src: url('assets/fonts/OpenSans-SemiBold.ttf') format('truetype');
+  unicode-range: U+0020-007E; 
 }
 </style>
