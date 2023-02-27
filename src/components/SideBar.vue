@@ -1,7 +1,7 @@
 <template>
     <v-card>
         <v-layout>
-            <v-navigation-drawer floating permanent color="rgb(41, 34, 71)">
+            <v-navigation-drawer floating permanent color="rgb(41, 35, 71)">
                 <v-list nav>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="파일이름 출력" value="filenamelist"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="To CSV" value="tocsv"></v-list-item>
