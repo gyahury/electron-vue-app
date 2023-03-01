@@ -1,7 +1,7 @@
 <template>
     <v-card>
         <v-layout>
-            <v-navigation-drawer floating permanent color="rgb(41, 35, 71)">
+            <v-navigation-drawer floating permanent elevation="3" color="rgb(255, 255, 255)">
                 <v-list nav>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="파일이름 출력" value="filenamelist"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="To CSV" value="tocsv"></v-list-item>
@@ -13,13 +13,16 @@
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="폴더/파일명 일괄 변경" value="chafilename"></v-list-item>
                 </v-list>
             </v-navigation-drawer>
-            <v-main style="height: 600px;"></v-main>
+            <v-main style="height: 550px;"></v-main>
         </v-layout>
     </v-card>
 </template>
 
 <style>
 .v-list-item--nav .v-list-item-title{
-    color: rgb(180, 180, 180); 
+    color: rgb(95, 94, 94); 
+}
+.v-list{
+    margin-top: 10px;
 }
 </style>

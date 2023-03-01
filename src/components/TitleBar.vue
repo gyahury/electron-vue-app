@@ -1,13 +1,16 @@
 <template>
       <v-layout>
         <v-app-bar
-          color="rgb(41, 34, 71)"
+          color="rgb(255, 255, 255)"
           density="compact"
         >  
           <v-app-bar-title></v-app-bar-title>
+          <template v-slot:prepend>
+            <v-btn icon="mdi-vuejs"></v-btn>
+          </template>
           <template v-slot:append>
-            <v-btn icon="mdi-minus"></v-btn>
-            <v-btn icon="mdi-close"></v-btn>
+            <v-btn icon="mdi-minus" size="small" style="color: rgb(100, 100, 100);"></v-btn>
+            <v-btn icon="mdi-close" size="small" style="color: rgb(100, 100, 100);"></v-btn>
           </template>
         </v-app-bar>
         <v-main>
