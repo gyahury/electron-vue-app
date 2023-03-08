@@ -3,7 +3,6 @@ import SideBar from './components/SideBar.vue'
 import TitleBar from './components/TitleBar.vue'
 </script>
 
-
 <template>
   <v-app>
     <v-main>
