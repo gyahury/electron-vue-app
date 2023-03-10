@@ -14,7 +14,9 @@
                 </v-list>
             </v-navigation-drawer>
             <v-main style="height: 550px;">
-                <router-view />
+                <v-sheet :height="250" :width="500" class="pa-10">
+                    <router-view />
+                </v-sheet>
             </v-main>
         </v-layout>
     </v-card>
@@ -39,11 +41,9 @@
         },
         toFileNameList() {
             this.$router.push("/FileNameList")
-            console.log("클릭확인1")
         },
         toXlsxToCsv() {
             this.$router.push("/XlsxToCsv")
-            console.log("클릭확인2")
         }
         }
     }
